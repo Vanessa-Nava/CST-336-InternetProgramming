@@ -1,0 +1,76 @@
+header, footer{
+    text-align: center
+}
+
+footer{
+    clear: left;
+    color: white;
+}
+
+body {
+    background-image: url("");
+    background-color: #cccccc;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 18px;
+    align-content:center;
+}
+
+h1 {
+    background: linear-gradient(silver, black);
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2 {
+    color:rgb(79,96,44);
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#card {
+    padding: 2.5px;
+}
+
+#userPic {
+width:60px;
+height:60px;
+padding-bottom: 0px;
+}
+
+#hand {
+    float: right;
+}
+
+#points {
+    float: left;
+}
+
+.submit {
+    background-color:rgb(15,127,18);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#box {
+    margin-left: 28%;
+    margin-right: 20%;
+}
+
+/*#body {*/
+/*    text-align: center;*/
+/*}*/
+

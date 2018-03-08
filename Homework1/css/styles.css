@@ -1,0 +1,77 @@
+#homeBody{
+    background-image: url("/img/art.jpg");
+    color: white;
+}
+#benefitsBody{
+    background-color: lightblue;
+    color: white;
+}
+#benefitList{
+    text-align: center;
+    font-weight: bold;
+}
+#home{
+    clear:right;
+}
+#riskBody{
+    background-color: black;
+}
+#riskList{
+    text-align: center;
+    float: left;
+    width: 40%;
+    color:lightblue;
+}
+#robot{
+    float:left;
+    width:40%;
+}
+#theBad{
+    text-align: center;
+}
+#projBenefit{
+    background-image: url("/img/Abstract-Color-Background.jpg");
+}
+header, main, nav,footer, #pages{
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+    margin-bottom:0px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+#aiInfo{
+    float: right;
+    width: 55%;
+    font-weight: bold;
+    
+}
+nav a { /* links within "nav" contauner */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white;          /*by default, links are blue */
+    
+}
+nav a:hover{ /*pseudo class */
+    border-bottom: 2px darkblue solid;
+    font-size: 2em;
+    transition: .9s; /*transition effect */
+    
+}
+footer{
+    clear: left;
+    color: white;
+ 
+}
+a{
+    color: #ffffff;
+    font-size: 150%;
+}
+#hello{
+    float:left;
+    width: 50%;
+    color:white;
+}
