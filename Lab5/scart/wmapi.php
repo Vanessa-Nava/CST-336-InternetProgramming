@@ -4,7 +4,7 @@
         $search = str_replace(' ', '%20', $keywords);
         $curl = curl_init();
         curl_setopt_array($curl, array(
-          CURLOPT_URL => "http://api.walmartlabs.com/v1/search?apiKey=c8qqx6b5d5qubda5yqngembb&query='$search'",
+          CURLOPT_URL => "http://api.walmartlabs.com/v1/search?apiKey=6bb974pm9tbqr9j9hqzpy3x4&query='$search'",
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_TIMEOUT => 30,
           CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,

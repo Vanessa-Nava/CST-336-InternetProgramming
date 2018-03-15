@@ -1,21 +1,37 @@
 <?php
-
-    session_start();
-    if(isset($_POST['itemName'])){
-        $_SESSION['cart'] = $_POST['itemName'];
-    }
-    include "functions.php";
-    
-    //checks to see if the foem is submitted
-    if(isset($_GET['query'])){
-        //Get access to your API function
-        include 'wmapi.php';
-        $items = getProducts($_GET['query']);
-    
-    }
-?>
-
-
+            session_start();
+   
+            
+            if(!isset($_SESSION['cart'])){
+                $_SESSION['cart'] = array();
+            }
+            if(isset($_POST['itemName'])){
+                $newItem = array();
+                $newItem['name'] = $_POST['itemName'];
+                $newItem['id'] = $_POST['itemId'];
+                $newItem['price'] = $_POST['itemPrice'];
+                $newItem['image'] = $_POST['itemImage'];
+                $found = false;
+               
+               
+                foreach($_SESSION['cart'] as $item){
+                    if($newItem['id'] == $item['id']){
+                        $item['quantity']+=1;
+                        $found = true;
+                    }
+                }
+                
+                if($found != true){
+                    $newItem['quantity'] = 0;
+                    array_push($_SESSION['cart'], $newItem);
+                }
+            }
+            include 'functions.php';
+            if(isset($_GET['query'])){
+                include 'wmapi.php';
+                $items = getProducts($_GET['query']);
+            }
+        ?> 
 <!DOCTYPE html>
 <html>
     <head>
@@ -39,8 +55,11 @@
                     </div>
                     <ul class='nav navbar-nav'>
                         <li><a href='index.php'>Home</a></li>
-                        <li><a href='scart.php'>Cart</a></li>
+                        <li><a href='scart.php'>
+                        <span class = 'glyphicon glyphicon-shopping-cart' aria-hidden = 'true'>
+                        </span> Cart: <?php displayCartCount(); ?></a></li> 
                     </ul>
+                    
                 </div>
             </nav>
             <br /> <br /> <br />
@@ -56,12 +75,11 @@
             </form>
             
             <!-- Display Search Results -->
-            <?php
-            
-                displayResult();
-            
-            ?>
-            
+            </br></br></br>
+         
+        <?php 
+            displayResults(); 
+        ?>
         </div>
     </div>
     </body>
