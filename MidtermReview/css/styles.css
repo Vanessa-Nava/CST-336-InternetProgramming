@@ -1,0 +1,11 @@
+#even{
+    background-color: yellow;
+}
+#odd{
+    background-color: green;
+}
+
+#table {
+    margin-left: auto;
+    margin-right: auto;
+}

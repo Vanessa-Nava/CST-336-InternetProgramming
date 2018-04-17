@@ -2,15 +2,20 @@
 <?php
     function displayResults(){
         
+        
+        if ($itemImage)
+            echo "<input type='hidden' name='itemImage' value='$itemImage'>"; 
+
         global $items;
     
         if(isset($items)){
             echo "<table class = 'table'>";
             foreach($items as $item){
-                $itemName = $item['name'];
-                $itemPrice = $item['salePrice'];
-                $itemImage = $item['thumbnailImage'];
-                $itemId = $item ['itemId'];
+               $itemName = $item['name']; 
+               $itemPrice = $item['price']; 
+               $itemImage = $item['image_url']; 
+               $itemId = $item['item_id']; 
+
         
                 echo '<tr>';
                 echo "<td><img src = '$itemImage'></td>";
@@ -72,4 +77,10 @@
     function displayCartCount(){
         echo count($_SESSION['cart']);
     }
+    
+    
+
+
+
+
 ?>
