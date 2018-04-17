@@ -74,7 +74,7 @@
                     <input type="text" class="form-control" name="query" id="pName" placeholder="Name">
                     Category: 
                     <select  name="category">
-                        <? echo getCategoriesHTML();?>
+                        <?php echo getCategoriesHTML();?>
                     </select>
                     <br/>
                     Price:  
