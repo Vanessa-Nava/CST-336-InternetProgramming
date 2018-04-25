@@ -5,9 +5,10 @@ function move(){
     var yDog = Math.floor(Math.random() * 201);
     // alert('xCat = ' + xCat + ', yCat = ' + yCat);
     //alert('xDog = ' + xDog + ', yDog = ' + yDog);
-    $('#cat').style.left = xCat + 'px';
+    //$('#cat').style.left = xCat + 'px';
+    $('#cat').css("left", xCat );//+ 'px'
     $('#cat').style.left = yCat + 'px';
-                
+    //panel.css("left", 150);
     $('#dog').style.left = xDog + 'px';
     $('#dog').style.left = yDog + 'px';
                 
