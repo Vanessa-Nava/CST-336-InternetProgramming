@@ -12,8 +12,8 @@ function move(){
     //panel.css("left", 150);
    // $('#dog').style.left = xDog + 'px';
    // $('#dog').style.left = yDog + 'px';
-    $('#cat').css("left", xDog );//+ 'px'
-    $('#cat').css("left", yDog );
+    $('#dog').css("left", xDog );//+ 'px'
+    $('#dog').css("left", yDog );
    
                 
 }
