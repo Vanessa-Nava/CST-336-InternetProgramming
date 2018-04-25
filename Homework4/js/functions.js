@@ -7,9 +7,13 @@ function move(){
     //alert('xDog = ' + xDog + ', yDog = ' + yDog);
     //$('#cat').style.left = xCat + 'px';
     $('#cat').css("left", xCat );//+ 'px'
-    $('#cat').style.left = yCat + 'px';
+    //$('#cat').style.left = yCat + 'px';
+    $('#cat').css("left", yCat );
     //panel.css("left", 150);
-    $('#dog').style.left = xDog + 'px';
-    $('#dog').style.left = yDog + 'px';
+   // $('#dog').style.left = xDog + 'px';
+   // $('#dog').style.left = yDog + 'px';
+    $('#cat').css("left", xDog );//+ 'px'
+    $('#cat').css("left", yDog );
+   
                 
 }
