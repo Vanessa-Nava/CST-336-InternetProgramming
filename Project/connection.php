@@ -1,9 +1,9 @@
 <?php
 function getDBConnection() {
-    $host = "localhost";
-    $username = "xovnsa";
-    $password = "Jayden15";
-    $dbname = "childCare"; 
+    $host = "us-cdbr-iron-east-04.cleardb.net";
+    $username = "b34448f92d5192";
+    $password = "5e2a40f7";
+    $dbname = "heroku_54f345c26e9fb0c"; 
 
     // //checking whether the URL contains "herokuapp" (using Heroku)
     // if(strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
