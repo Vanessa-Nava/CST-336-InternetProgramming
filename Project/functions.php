@@ -1,33 +1,29 @@
 
 <?php
-    function displayResults(){
-        
-        
-        if ($itemImage)
-            echo "<input type='hidden' name='itemImage' value='$itemImage'>"; 
-
-        global $items;
+    // function displayResults($items){
     
-        if(isset($items)){
-            echo "<table class = 'table'>";
-            foreach($items as $item){
-               $itemName = $item['name']; 
-               $itemPrice = $item['parent'];
+    
+    //     if(isset($items)){
+    //         echo "<table class = 'table'>";
+    //         foreach($items as $item){
+    //           $itemName = $item['name']; 
+    //           $itemParent = $item['parent'];
 
         
-                echo '<tr>';
-                echo "<td><h4>$itemName</h4></td>";
-                echo "<td><h4>$itemPrice</h4></td>";
+    //             echo '<tr>';
+    //             echo "<td><h4>$itemName</h4></td>";
+    //             echo "<td><h4>$itemParent</h4></td>";
                 
-                echo "<form method = 'post'>";
+    //             echo "<form method = 'post'>";
                 
                 
-                echo "</form>";
-                echo '</tr>';
-            }
-            echo "</table>";
-        }
-    }
+                
+    //             echo "</form>";
+    //             echo '</tr>';
+    //         }
+    //         echo "</table>";
+    //     }
+    // }
     function displayCart(){
         if(isset($_SESSION['cart'])){
             echo "<table class='table'>";

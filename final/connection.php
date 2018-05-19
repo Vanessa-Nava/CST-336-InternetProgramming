@@ -15,8 +15,5 @@ function connectToDB() {
     ];
     $pdo = new PDO($dsn, $user, $pass, $opt);
     return $pdo; 
-}
-
-
-
+    }
 ?>

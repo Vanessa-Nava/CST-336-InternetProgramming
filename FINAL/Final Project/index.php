@@ -1,22 +1,8 @@
-<?php
-session_start();
-function displayQuiz(){
-    if(isset($_SESSION['username'])){
-        include 'quiz.php';
-    }
-    else{
-        header("Location: login.php");
-    }
-}
-?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>CSUMB Online Quiz</title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-            
-        </script>
     </head>
     
     <body>

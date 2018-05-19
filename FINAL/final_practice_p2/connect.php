@@ -2,7 +2,7 @@
 
 function connectToDB() {
     $host = 'localhost';
-    $db   =  'final';
+    $db   =  'easyQuiz';
     $user = 'xovnsa';
     $pass = 'Jayden15';
     $charset = 'utf8mb4';
@@ -14,9 +14,9 @@ function connectToDB() {
         PDO::ATTR_EMULATE_PREPARES   => false,
     ];
     $pdo = new PDO($dsn, $user, $pass, $opt);
+    
+    // print_r($pdo);
     return $pdo; 
 }
-
-
 
 ?>

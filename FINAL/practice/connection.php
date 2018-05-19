@@ -17,6 +17,4 @@ function connectToDB() {
     return $pdo; 
 }
 
-
-
 ?>
