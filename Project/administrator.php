@@ -14,7 +14,6 @@
             <input type="submit" name = "add" value = "Add Information"><br>
             <input type="submit" name = "delete" value = "Delete Information"><br>
             <input type = "submit" name = "update" value = "Update Information"><br><br>
-            <input type = "submit" name = "home" value = "Home Page "><br>
             <input type = "submit" name = "logout" value = "Log Out "><br>
         </form>
         

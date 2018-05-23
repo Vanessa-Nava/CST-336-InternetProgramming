@@ -47,6 +47,19 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;
 
 //mysql://bcd4044de4d4d5:dc17003b@us-cdbr-iron-east-05.cleardb.net/heroku_cea76a0c06444ac?reconnect=true
 
+// mysql://b34448f92d5192:5e2a40f7@us-cdbr-iron-east-04.cleardb.net/heroku_54f345c26e9fb0c?reconnect=true
+// mysql://b34448f92d5192:5e2a40f7@us-cdbr-iron-east-04.cleardb.net/heroku_54f345c26e9fb0c?reconnect=true
+
+$i++;
+/* Authentication type */
+$cfg['Servers'][$i]['auth_type'] = 'config';
+/* Server parameters */
+$cfg['Servers'][$i]['host'] = 'us-cdbr-iron-east-04.cleardb.net';
+$cfg['Servers'][$i]['user'] = 'b34448f92d5192';
+$cfg['Servers'][$i]['password'] ='5e2a40f7';
+$cfg['Servers'][$i]['compress'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = true;
+
 /**
  * phpMyAdmin configuration storage settings.
  */

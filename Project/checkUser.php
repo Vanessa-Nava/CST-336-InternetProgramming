@@ -20,6 +20,6 @@ if($_GET['username'] == "user_1" && $_GET['password'] =="pass"){
     //$_SESSION['username'] = $user['username'];
     header('Location: administrator.php');
 } else {
-    echo "The values you entered were incorrect. <a href = 'index.php'> Retry </a>";
+    echo "The values you entered were incorrect. <a href = 'logIn.php'> Retry </a>";
 }
 ?>
